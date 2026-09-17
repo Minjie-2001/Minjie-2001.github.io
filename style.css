@@ -3133,3 +3133,29 @@ footer::before {
         margin-left: 5%;
     }
 }
+
+/* =========================================
+   Fix Project Page Navigation Click
+   ========================================= */
+
+nav {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 9999 !important;
+}
+
+nav .logo,
+nav .nav-links,
+nav .nav-links a {
+    position: relative;
+    z-index: 10000;
+    pointer-events: auto !important;
+}
+
+.project-hero,
+.project-detail,
+.project-page,
+.project-header {
+    position: relative;
+    z-index: 1;
+}

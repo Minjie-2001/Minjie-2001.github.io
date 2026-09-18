@@ -3295,3 +3295,213 @@ nav .nav-links a {
         transform: translateX(3px);
     }
 }
+
+/* =========================================
+   FINAL MOBILE PROJECT PAGE FIX
+   Project 01 / 02 / 03
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    body {
+        min-width: 0 !important;
+    }
+
+
+    /* ---------- Navigation ---------- */
+
+    nav {
+        position: sticky !important;
+        top: 0 !important;
+
+        width: 100% !important;
+        max-width: 100% !important;
+        height: 64px !important;
+
+        margin: 0 !important;
+        padding: 0 20px !important;
+
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+
+        background: rgba(250, 250, 248, 0.98) !important;
+        border-bottom: 1px solid #e4e4e1;
+
+        z-index: 9999 !important;
+    }
+
+
+    nav .logo {
+        width: auto !important;
+        max-width: none !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        flex: 0 0 auto !important;
+    }
+
+
+    nav .logo a {
+        display: block;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        white-space: nowrap !important;
+
+        font-size: 14px !important;
+        line-height: 1 !important;
+        letter-spacing: 1.5px;
+    }
+
+
+    nav .menu-toggle {
+        display: block !important;
+
+        width: auto !important;
+        height: auto !important;
+
+        margin: 0 !important;
+        padding: 5px !important;
+
+        font-size: 25px !important;
+        line-height: 1 !important;
+
+        flex: 0 0 auto !important;
+
+        background: transparent !important;
+        border: none !important;
+    }
+
+
+    /* ---------- Dropdown ---------- */
+
+    nav .nav-links {
+        display: none !important;
+
+        position: absolute !important;
+
+        top: 64px !important;
+        left: 0 !important;
+        right: 0 !important;
+
+        width: 100% !important;
+        max-width: none !important;
+
+        margin: 0 !important;
+        padding: 16px 20px 20px !important;
+
+        flex-direction: column !important;
+        align-items: flex-start !important;
+
+        background: #ffffff !important;
+
+        border-top: 1px solid #e5e5e2;
+        border-bottom: 1px solid #e5e5e2;
+
+        z-index: 10000 !important;
+    }
+
+
+    nav .nav-links.active {
+        display: flex !important;
+    }
+
+
+    nav .nav-links a {
+        display: block !important;
+
+        width: 100% !important;
+
+        margin: 0 !important;
+        padding: 10px 0 !important;
+
+        font-size: 14px !important;
+        line-height: 1.5 !important;
+
+        white-space: nowrap;
+
+        color: #555;
+    }
+
+
+    /* ---------- Project page ---------- */
+
+    main {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        overflow: hidden;
+    }
+
+
+    .project-hero {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        margin: 0 !important;
+
+        padding:
+            70px 24px
+            75px 24px !important;
+    }
+
+
+    .project-hero h1 {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        font-size: clamp(38px, 11vw, 50px) !important;
+        line-height: 1.08 !important;
+
+        overflow-wrap: normal !important;
+        word-break: normal !important;
+    }
+
+
+    .project-summary {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        font-size: 15px !important;
+        line-height: 1.8 !important;
+    }
+
+
+    .project-detail-section {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        margin: 0 !important;
+
+        padding:
+            65px 24px !important;
+
+        box-sizing: border-box;
+    }
+
+
+    .project-section-content {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+    }
+
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}

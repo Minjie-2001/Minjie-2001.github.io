@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Certificate | Minjie Xu</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 50px 20px;
+
+            min-height: 100vh;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: #f5f6f6;
+
+            font-family: Arial, sans-serif;
+        }
+
+        .certificate-viewer {
+            width: 100%;
+            max-width: 900px;
+
+            text-align: center;
+        }
+
+        .certificate-viewer img {
+            display: block;
+
+            width: auto;
+            max-width: 100%;
+            max-height: 82vh;
+
+            margin: 0 auto;
+
+            object-fit: contain;
+
+            background: white;
+
+            box-shadow:
+                0 8px 35px rgba(0, 0, 0, 0.08);
+        }
+
+        .back-link {
+            display: inline-block;
+
+            margin-top: 25px;
+
+            font-size: 13px;
+            color: #555;
+
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+
+            body {
+                padding: 20px 14px;
+            }
+
+            .certificate-viewer img {
+                max-height: 85vh;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="certificate-viewer">
+
+        <img id="certificate-image" alt="Certificate">
+
+        <a href="index.html#awards" class="back-link">
+            ← Back to Awards & Honors
+        </a>
+
+    </div>
+
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const image = params.get("img");
+
+        if (image) {
+            document.getElementById("certificate-image").src =
+                "images/" + image;
+        }
+    </script>
+
+</body>
+
+</html>

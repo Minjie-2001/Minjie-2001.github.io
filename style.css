@@ -3505,3 +3505,432 @@ nav .nav-links a {
         height: auto;
     }
 }
+
+
+/* =========================================
+   FINAL PROJECT MOBILE LAYOUT
+   Project 01 / 02 / 03
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    /* =========================
+       Project Detail Sections
+       ========================= */
+
+    .project-detail-section {
+        display: block !important;
+
+        width: 100% !important;
+        max-width: 100% !important;
+
+        margin: 0 !important;
+        padding: 60px 24px !important;
+    }
+
+
+    /* Section number: 01 / 02 / 03 / 04 */
+
+    .project-section-number {
+        display: block !important;
+
+        width: 100% !important;
+
+        margin: 0 0 14px 0 !important;
+        padding: 0 !important;
+
+        font-size: 12px !important;
+    }
+
+
+    .project-section-content {
+        display: block !important;
+
+        width: 100% !important;
+        max-width: none !important;
+        min-width: 0 !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+
+    .project-section-label {
+        margin: 0 0 14px 0 !important;
+    }
+
+
+    .project-section-content h2 {
+        width: 100% !important;
+        max-width: none !important;
+
+        margin: 0 0 35px 0 !important;
+
+        font-size: 30px !important;
+        line-height: 1.25 !important;
+
+        word-break: normal !important;
+        overflow-wrap: normal !important;
+    }
+
+
+    /* =========================
+       Overview
+       ========================= */
+
+    .project-overview-grid {
+        display: block !important;
+
+        width: 100% !important;
+
+        margin: 0 !important;
+    }
+
+
+    .project-overview-main {
+        width: 100% !important;
+        max-width: none !important;
+    }
+
+
+    .project-overview-main p {
+        width: 100% !important;
+
+        font-size: 15px !important;
+        line-height: 1.8 !important;
+    }
+
+
+    /* Facts move below main text */
+
+    .project-facts {
+        width: 100% !important;
+
+        margin-top: 40px !important;
+    }
+
+
+    .project-fact {
+        width: 100% !important;
+    }
+
+
+    /* =========================
+       Intro
+       ========================= */
+
+    .project-section-intro {
+        width: 100% !important;
+        max-width: none !important;
+
+        margin: 0 0 40px 0 !important;
+
+        font-size: 15px !important;
+        line-height: 1.8 !important;
+    }
+
+
+    /* =========================
+       Fabrication Flow
+       ========================= */
+
+    .fabrication-flow {
+        display: block !important;
+
+        width: 100% !important;
+
+        margin-top: 35px !important;
+    }
+
+
+    .fabrication-step {
+        width: 100% !important;
+
+        min-height: auto !important;
+
+        padding: 22px 0 !important;
+    }
+
+
+    .flow-arrow {
+        display: none !important;
+    }
+
+
+    /* =========================
+       Function Grid
+       ========================= */
+
+    .function-grid {
+        display: grid !important;
+
+        grid-template-columns: 1fr !important;
+
+        width: 100% !important;
+
+        gap: 0 !important;
+    }
+
+
+    .function-item {
+        width: 100% !important;
+        min-width: 0 !important;
+    }
+
+
+    /* =========================
+       Research Output
+       ========================= */
+
+    .output-grid {
+        display: grid !important;
+
+        grid-template-columns: 1fr !important;
+
+        width: 100% !important;
+    }
+
+
+    .output-item {
+        width: 100% !important;
+        min-width: 0 !important;
+    }
+
+
+    /* =========================
+       Publication Information
+       ========================= */
+
+    .publication-meta,
+    .publication-meta.publication-meta-four {
+        display: grid !important;
+
+        grid-template-columns: 1fr !important;
+
+        width: 100% !important;
+        max-width: none !important;
+    }
+
+
+    .publication-meta-item,
+    .publication-meta-four .publication-meta-item {
+        width: 100% !important;
+
+        padding: 18px 0 !important;
+
+        border-right: none !important;
+        border-bottom: 1px solid var(--line) !important;
+    }
+
+
+    .publication-meta-item a {
+        white-space: normal !important;
+        overflow-wrap: anywhere !important;
+    }
+
+
+    /* =========================
+       Images
+       ========================= */
+
+    .project-figure,
+    .project02-figure,
+    .project03-sem {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+
+    .project-figure img,
+    .project02-figure img,
+    .project03-sem img {
+        display: block !important;
+
+        width: 100% !important;
+        max-width: 100% !important;
+
+        height: auto !important;
+    }
+
+
+    /* =========================
+       Project publication
+       ========================= */
+
+    .project-publication {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        overflow-wrap: anywhere;
+    }
+
+
+    /* =========================
+       Final overflow protection
+       ========================= */
+
+    .project-hero *,
+    .project-detail-section * {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+}
+
+/* =========================================
+   FINAL MOBILE OUTPUT + PUBLICATION FIX
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    /* ---------------------------------
+       Project Information
+       --------------------------------- */
+
+    .output-grid {
+        display: block !important;
+        width: 100% !important;
+
+        margin: 30px 0 0 0 !important;
+        padding: 0 !important;
+
+        border-top: 1px solid var(--line) !important;
+        border-bottom: 1px solid var(--line) !important;
+        border-left: none !important;
+        border-right: none !important;
+    }
+
+    .output-item {
+        display: block !important;
+
+        width: 100% !important;
+        min-width: 0 !important;
+
+        margin: 0 !important;
+        padding: 25px 0 !important;
+
+        border: none !important;
+        border-bottom: 1px solid var(--line) !important;
+    }
+
+    .output-item:last-child {
+        border-bottom: none !important;
+    }
+
+    .output-item span {
+        display: block !important;
+
+        margin: 0 0 14px 0 !important;
+        padding: 0 !important;
+
+        font-size: 10px !important;
+        letter-spacing: 1.6px !important;
+    }
+
+    .output-item p {
+        margin: 0 !important;
+        padding: 0 !important;
+
+        font-size: 14px !important;
+        line-height: 1.9 !important;
+    }
+
+
+    /* ---------------------------------
+       Related Publication
+       --------------------------------- */
+
+    .project-publication {
+        width: 100% !important;
+
+        margin: 55px 0 0 0 !important;
+        padding: 0 !important;
+
+        border: none !important;
+    }
+
+    .project-publication > span {
+        display: block !important;
+        margin-bottom: 18px !important;
+    }
+
+    .project-publication > h3 {
+        width: 100% !important;
+
+        margin: 0 0 22px 0 !important;
+
+        font-size: 21px !important;
+        line-height: 1.55 !important;
+    }
+
+    .project-publication > p {
+        width: 100% !important;
+
+        margin: 0 0 30px 0 !important;
+
+        font-size: 13px !important;
+        line-height: 1.8 !important;
+    }
+
+
+    /* ---------------------------------
+       Publication metadata
+       --------------------------------- */
+
+    .publication-meta,
+    .publication-meta.publication-meta-four {
+        display: block !important;
+
+        width: 100% !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        border-top: 1px solid var(--line) !important;
+        border-bottom: 1px solid var(--line) !important;
+        border-left: none !important;
+        border-right: none !important;
+    }
+
+    .publication-meta-item,
+    .publication-meta-four .publication-meta-item {
+        display: block !important;
+
+        width: 100% !important;
+
+        margin: 0 !important;
+        padding: 20px 0 !important;
+
+        border: none !important;
+        border-bottom: 1px solid var(--line) !important;
+    }
+
+    .publication-meta-item:last-child,
+    .publication-meta-four .publication-meta-item:last-child {
+        border-bottom: none !important;
+    }
+
+    .publication-meta-item span,
+    .publication-meta-four .publication-meta-item span {
+        display: block !important;
+
+        margin: 0 0 8px 0 !important;
+        padding: 0 !important;
+
+        font-size: 10px !important;
+        letter-spacing: 1.5px !important;
+    }
+
+    .publication-meta-item p,
+    .publication-meta-four .publication-meta-item p {
+        margin: 0 !important;
+        padding: 0 !important;
+
+        font-size: 14px !important;
+        line-height: 1.7 !important;
+    }
+
+}
